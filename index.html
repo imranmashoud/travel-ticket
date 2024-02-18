@@ -231,7 +231,9 @@
                   <img src="images/seat-green.png" alt="" />
                 </div>
                 <div>
-                  <p class="text-[#1DD100] font-bold">40 Seats left</p>
+                  <p id="available-seat" class="text-[#1DD100] font-bold">
+                    40 Seats left
+                  </p>
                 </div>
               </div>
             </div>
@@ -270,7 +272,9 @@
           <img class="hidden lg:block" src="images/info-devider.png" alt="" />
           <div class="flex flex-col items-center justify-center">
             <img src="./images/fare.png" alt="" />
-            <h1 class="text-3xl font-extrabold">550 Taka</h1>
+            <h1 class="text-3xl font-extrabold">
+              <span id="seat-price">550</span> Taka
+            </h1>
             <p class="text-xl">per Seat</p>
           </div>
         </div>
@@ -320,52 +324,252 @@
                 <div class="mb-[25px] lg:mt-[50px] lg:mr-[17px] lg:mb-0">J</div>
               </div>
               <div class="flex flex-col lg:mr-[32px]">
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">A1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">B1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">C1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">D1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">E1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">F1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">G1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">H1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">I1</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">J1</div>
+                <div
+                  id="a1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  A1
+                </div>
+                <div
+                  id="b1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  B1
+                </div>
+                <div
+                  id="c1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  C1
+                </div>
+                <div
+                  id="d1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  D1
+                </div>
+                <div
+                  id="e1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  E1
+                </div>
+                <div
+                  id="f1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  F1
+                </div>
+                <div
+                  id="g1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  G1
+                </div>
+                <div
+                  id="h1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  H1
+                </div>
+                <div
+                  id="i1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  I1
+                </div>
+                <div
+                  id="j1"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  J1
+                </div>
               </div>
               <div class="flex flex-col lg:mr-[32px]">
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">A2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">B2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">C2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">D2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">E2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">F2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">G2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">H2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">I2</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">J2</div>
+                <div
+                  id="a2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  A2
+                </div>
+                <div
+                  id="b2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  B2
+                </div>
+                <div
+                  id="c2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  C2
+                </div>
+                <div
+                  id="d2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  D2
+                </div>
+                <div
+                  id="e2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  E2
+                </div>
+                <div
+                  id="f2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  F2
+                </div>
+                <div
+                  id="g2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  G2
+                </div>
+                <div
+                  id="h2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  H2
+                </div>
+                <div
+                  id="i2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  I2
+                </div>
+                <div
+                  id="j2"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  J2
+                </div>
               </div>
               <div class="flex flex-col lg:mr-[32px]">
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">A3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">B3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">C3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">D3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">E3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">F3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">G3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">H3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">I3</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">J3</div>
+                <div
+                  id="a3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  A3
+                </div>
+                <div
+                  id="b3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  B3
+                </div>
+                <div
+                  id="c3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  C3
+                </div>
+                <div
+                  id="d3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  D3
+                </div>
+                <div
+                  id="e3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  E3
+                </div>
+                <div
+                  id="f3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  F3
+                </div>
+                <div
+                  id="g3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  G3
+                </div>
+                <div
+                  id="h3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  H3
+                </div>
+                <div
+                  id="i3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  I3
+                </div>
+                <div
+                  id="j3"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  J3
+                </div>
               </div>
               <div class="flex flex-col lg:mr-[32px]">
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">A4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">B4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">C4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">D4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">E4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">F4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">G4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">H4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">I4</div>
-                <div class="btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]">J4</div>
+                <div
+                  id="a4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  A4
+                </div>
+                <div
+                  id="b4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  B4
+                </div>
+                <div
+                  id="c4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  C4
+                </div>
+                <div
+                  id="d4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  D4
+                </div>
+                <div
+                  id="e4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  E4
+                </div>
+                <div
+                  id="f4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  F4
+                </div>
+                <div
+                  id="g4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  G4
+                </div>
+                <div
+                  id="h4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  H4
+                </div>
+                <div
+                  id="i4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  I4
+                </div>
+                <div
+                  id="j4"
+                  class="seat-btn btn lg:mt-[24px] lg:h-[56px] lg:w-[110px]"
+                >
+                  J4
+                </div>
               </div>
             </div>
           </div>
@@ -379,6 +583,7 @@
                     <p>
                       Seat
                       <span
+                        id="seat-count"
                         class="bg-[#1DD100] text-[#FFFFFF] h-[13px] w-[23px] px-2 rounded-lg"
                         >0</span
                       >
@@ -388,20 +593,8 @@
                   </div>
                 </div>
                 <hr class="hr lg:mt-[13px] lg:mb-[13px]" />
-                <div>
-                  <div class="flex justify-between">
-                    <p>C2</p>
-                    <p>Economy</p>
-                    <p>0</p>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between">
-                    <p>C2</p>
-                    <p>Economy</p>
-                    <p>0</p>
-                  </div>
-                </div>
+                <div id="seat-number"></div>
+
                 <hr class="lg:mt-[13px] lg:mb-[13px]" />
                 <div>
                   <div class="flex justify-between">
@@ -490,5 +683,6 @@
       </section>
     </main>
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/utility.js"></script>
   </body>
 </html>
