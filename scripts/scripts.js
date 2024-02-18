@@ -9,6 +9,7 @@ document.getElementById("scrollButton").addEventListener("click", function () {
 const allBtn = document.getElementsByClassName("seat-btn");
 
 let count = 0;
+let totalPrice = 0;
 
 for (const btn of allBtn) {
   btn.addEventListener("click", function (element) {
@@ -17,8 +18,8 @@ for (const btn of allBtn) {
     document.getElementById("available-seat").innerText = 40 - count;
     element.target.style.backgroundColor = "#1DD100";
     const getSeat = element.target.innerText;
-    const ticketPrice = document.getElementById("seat-price").innerText;
-    // console.log(getSeat);
+    let ticketPrice = parseInt(document.getElementById("seat-price").innerText);
+    // console.log(typeof ticketPrice);
 
     const parentContainer = document.getElementById("seat-number");
 
@@ -35,6 +36,9 @@ for (const btn of allBtn) {
     divCon.appendChild(p1);
 
     parentContainer.appendChild(divCon);
-    divCon.classList.add("flex", "flex-row", "justify-between");
+    divCon.classList.add("flex", "flex-row", "justify-between", "font-bold");
+
+    totalPrice += ticketPrice;
+    document.getElementById("total-price").innerText = totalPrice;
   });
 }
