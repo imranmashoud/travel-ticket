@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,91 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <section class="nav-container">
+      <header class="header-part">
+        <!-- nav section start here -->
+        <nav class="container mx-auto">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              
+              <h1 class="font-raleway text-4xl font-extrabold text-[#030712]">
+                T-Ticket
+              </h1>
+            </div>
+            <div class="navbar-center lg:flex">
+              <ul
+                class="menu menu-horizontal px-1 font-raleway text-lg font-medium text-[#030712B3]"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <button
+                class="flex items-center gap-2 bg-[#1DD1001A] border border-[#1DD10066] px-6 py-3 font-raleway text-[#1DD100] text-xl font-bold rounded-xl"
+              >
+                Bus
+                <img src="images/bus-icon.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </nav>
+    </section>
+    <!-- Banner Section -->
+    <section>
+  <div class="container relative mx-auto mt-10 text-center bg-[url('./images/banner.png')] bg-cover bg-no-repeat min-h-[720px] rounded-[36px] flex items-center justify-center flex-col relative"
+  >
+    <!-- banner text -->
+    <div class="space-y-16">
+      <h1 class="font-extrabold text-white text-7xl font-raleway">
+        End-to-End Travel with <br />
+        <span class="text-[#45b334]">Dream Bus</span>
+      </h1>
+      <p class="text-lg text-white">
+        Welcome to Amar Bus. I will share all more update information about
+        Amar Bus. If you wise, you can Book Amar Bus Ticket Online. <br />
+        We’ve added Online Ticket Booking Official.
+      </p>
+      <button
+        class="bg-[#1DD100] px-6 py-3 font-raleway text-black text-xl font-bold rounded-xl border-2 border-transparent hover:text-white hover:bg-transparent hover:border-[#1DD100] transition duration-700"
+      >
+        Buy Tickets
+      </button>
+    </div>
+    <div class="flex space-x-12 absolute top-[665px]  lg:left-80">
+      <!-- 1st card -->
+      <div class="bg-white py-2 px-4 rounded-2xl border-4 border-b-green-500 space-x-2 flex">
+        <img class="p-3" src="./images/people.png" alt="">
+        <div class="text-start">
+          <h3 class="text-2xl font-bold">500K+</h3>
+          <p>Registered users</p>
+        </div>
+      </div>
+      <!-- 2nd card -->
+      <div class="bg-white py-2 px-4 rounded-2xl border-4 border-b-green-500 space-x-2 flex">
+        <img class="p-3" src="./images/ticket-cupon.png" alt="">
+        <div class="text-start">
+          <h3 class="text-2xl font-bold">1.7 lacks</h3>
+          <p>Tickets sold</p>
+        </div>
+      </div>
+
+      <!-- 3rd card -->
+      <div class="bg-white py-2 px-4 rounded-2xl border-4 border-b-green-500 space-x-2 flex">
+        <img class="p-3" src="./images/stoppage.png " alt="">
+        <div class="text-start">
+          <h3 class="text-2xl font-bold">80K+</h3>
+          <p>Rental partners</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  </section>
+  </header>
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>
