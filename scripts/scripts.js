@@ -14,33 +14,44 @@ let totalPrice = 0;
 
 for (const btn of allBtn) {
   btn.addEventListener("click", function (element) {
-    count++;
-    document.getElementById("seat-count").innerText = count;
-    document.getElementById("available-seat").innerText = 40 - count;
-    element.target.style.backgroundColor = "#1DD100";
-    const getSeat = element.target.innerText;
-    // let ticketPrice = parseInt(document.getElementById("seat-price").innerText);
-    // console.log(typeof ticketPrice);
+    if (count < 4) {
+      count++;
+      document.getElementById("seat-count").innerText = count;
+      document.getElementById("available-seat").innerText = 40 - count;
+      element.target.style.backgroundColor = "#1DD100";
+      const getSeat = element.target.innerText;
 
-    const parentContainer = document.getElementById("seat-number");
+      // let ticketPrice = parseInt(document.getElementById("seat-price").innerText);
+      // console.log(typeof ticketPrice);
 
-    const divCon = document.createElement("div");
-    const p = document.createElement("p");
-    p.innerText = getSeat;
-    const p1 = document.createElement("p");
-    p1.innerText = ticketPrice;
+      const parentContainer = document.getElementById("seat-number");
 
-    const p2 = document.createElement("p");
-    p2.innerText = "economy";
-    divCon.appendChild(p);
-    divCon.appendChild(p2);
-    divCon.appendChild(p1);
+      const divCon = document.createElement("div");
+      const p = document.createElement("p");
+      p.innerText = getSeat;
+      const p1 = document.createElement("p");
+      p1.innerText = ticketPrice;
 
-    parentContainer.appendChild(divCon);
-    divCon.classList.add("flex", "flex-row", "justify-between", "font-bold");
+      const p2 = document.createElement("p");
+      p2.innerText = "economy";
+      divCon.appendChild(p);
+      divCon.appendChild(p2);
+      divCon.appendChild(p1);
 
-    totalPrice += ticketPrice;
-    document.getElementById("total-price").innerText = totalPrice;
+      parentContainer.appendChild(divCon);
+      divCon.classList.add("flex", "flex-row", "justify-between", "font-bold");
+
+      totalPrice += ticketPrice;
+      document.getElementById("total-price").innerText = totalPrice;
+      if (count === 4) {
+        for (const button of allBtn) {
+          if (!button.classList.contains("selected")) {
+            button.disabled = true;
+          }
+        }
+        alert("You have selected maximum number of seats");
+      }
+    }
   });
 }
 
