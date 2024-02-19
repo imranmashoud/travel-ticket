@@ -73,11 +73,30 @@ btn.addEventListener("click", function () {
     disDiv.appendChild(p1);
     disDiv.appendChild(p2);
     discountContainer.appendChild(disDiv);
-    disDiv.classList.add("flex", "justify-between");
+    disDiv.classList.add("flex", "justify-between", "font-bold");
 
     const hideContainer = document.getElementById("discount-container");
     hideContainer.classList.add("hidden");
+
+    const grandTotal = document.getElementById("grand-total");
+    grandTotal.innerText = totalPrice - disAmount;
+  } else if (couponCode === "COUPLE20") {
+    const discountContainer = document.getElementById("discounted-amount");
+    const disAmount = totalPrice * 0.2;
+    const disDiv = document.createElement("div");
+    const p1 = document.createElement("p");
+    p1.innerText = "Discount amount";
+    const p2 = document.createElement("p");
+    p2.innerText = disAmount;
+    disDiv.appendChild(p1);
+    disDiv.appendChild(p2);
+    discountContainer.appendChild(disDiv);
+    disDiv.classList.add("flex", "justify-between", "font-bold");
+    const hideContainer = document.getElementById("discount-container");
+    hideContainer.classList.add("hidden");
+    const grandTotal = document.getElementById("grand-total");
+    grandTotal.innerText = totalPrice - disAmount;
   } else {
-    alert("Invalid coupon");
+    alert("Please enter a valid coupon code.");
   }
 });
