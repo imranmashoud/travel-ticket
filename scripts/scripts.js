@@ -100,3 +100,20 @@ btn.addEventListener("click", function () {
     alert("Please enter a valid coupon code.");
   }
 });
+
+// console.log(nameInput);
+
+const purchaseButton = document.getElementById("purchase-btn");
+purchaseButton.addEventListener("click", function () {
+  const nameInput = document.getElementById("name-id").value;
+  const numberInput = document.getElementById("number-id").value;
+  if (nameInput !== "" && numberInput !== "") {
+    console.log("hello bro");
+  } else {
+    if (nameInput === "") {
+      alert("Input field is empty!");
+    } else {
+      alert("Number field is either empty or not a valid number!");
+    }
+  }
+});
