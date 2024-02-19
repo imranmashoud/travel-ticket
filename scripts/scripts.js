@@ -63,6 +63,9 @@ btn.addEventListener("click", function () {
     disDiv.appendChild(p2);
     discountContainer.appendChild(disDiv);
     disDiv.classList.add("flex", "justify-between");
+
+    const hideContainer = document.getElementById("discount-container");
+    hideContainer.classList.add("hidden");
   } else {
     alert("Invalid coupon");
   }
